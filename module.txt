@@ -1,0 +1,18 @@
+{
+    "id": "TradeFactionIntegration",
+    "version": "0.0.1",
+    "author": "niksoc",
+    "displayName": "TradeFactionIntegration",
+    "description": "Integration between Trade and Factions",
+    "dependencies": [
+     {
+      "id" : "Factions",
+      "minVersion" : "0.0.1"
+     },
+     {
+       "id" : "Trade",
+       "minVersion" : "0.0.1"
+     }
+    ],
+    "serverSideOnly": false
+}
