@@ -1,0 +1,8 @@
+{
+  "externalTradePolicy":{},
+  "factionPolicy": {
+    "name": "External Trade",
+    "category": "Trade",
+    "description": "Inter-Faction trade relations"
+  }
+}

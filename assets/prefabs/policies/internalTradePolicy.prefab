@@ -1,0 +1,8 @@
+{
+  "internalTradePolicy":{},
+  "factionPolicy": {
+    "name": "Internal Trade",
+    "category": "Trade",
+    "description": "Intra-Faction trade relations"
+  }
+}

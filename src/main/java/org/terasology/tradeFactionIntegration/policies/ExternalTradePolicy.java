@@ -15,8 +15,24 @@
  */
 package org.terasology.tradeFactionIntegration.policies;
 
-import org.terasology.factions.policies.TwoWayPolicy;
+import org.terasology.factions.policies.FieldDescriptor;
+import org.terasology.factions.policies.policies.TwoWayPolicy;
+import org.terasology.reflection.MappedContainer;
 
+import java.util.ArrayList;
+import java.util.List;
+
+@MappedContainer
 public class ExternalTradePolicy extends TwoWayPolicy {
     public boolean tradeAllowed = true;
+
+    @Override
+    public List<FieldDescriptor> getFieldDescriptions() {
+        List<FieldDescriptor> fields = new ArrayList<>();
+        fields.add(new FieldDescriptor("trade allowed",
+                "" + tradeAllowed,
+                "is trade allowed between the two factions"
+                ));
+        return fields;
+    }
 }

@@ -15,8 +15,24 @@
  */
 package org.terasology.tradeFactionIntegration.policies;
 
-import org.terasology.factions.policies.InternalPolicy;
+import org.terasology.factions.policies.FieldDescriptor;
+import org.terasology.factions.policies.policies.InternalPolicy;
+import org.terasology.reflection.MappedContainer;
 
+import java.util.ArrayList;
+import java.util.List;
+
+@MappedContainer
 public class InternalTradePolicy extends InternalPolicy {
     public float discount = 0.5f;
+
+    @Override
+    public List<FieldDescriptor> getFieldDescriptions() {
+        List<FieldDescriptor> fields = new ArrayList<>();
+        fields.add(new FieldDescriptor("discount",
+                "" + discount,
+                "discount granted by merchants to members of their faction"
+        ));
+        return fields;
+    }
 }

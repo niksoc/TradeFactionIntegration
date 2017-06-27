@@ -1,6 +1,6 @@
 {
   "parent": "Trade:seller",
-  "faction": {
+  "factionMember": {
     "name": "Dwarves"
   }
 }
